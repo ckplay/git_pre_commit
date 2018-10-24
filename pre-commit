@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+echo "Running php syntax checking."
+PHP_FILES=$(git diff --diff-filter=d --cached --name-only | grep -E '\.php$')
+for file in $PHP_FILES
+do
+        echo $file
+        /c/xampp/php/php.exe -l $file
+        if [ $? -ne 0 ]; then
+                echo "some error";
+                exit 1;
+        fi
+done
+echo "syntax check done"
