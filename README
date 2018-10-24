@@ -1,0 +1,6 @@
+利用git hook來做特定的事情
+
+
+*pre-commit : 在commit前做的事情, 目前範例是先跑xampp的php 來檢查php語法的合法性
+             不合法就先提示語法錯誤的檔案和行數並中斷commit的動作
+             請自行修改本機電腦php安裝的路徑:  /c/xampp/php/php.exe
