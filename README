@@ -4,3 +4,8 @@
 *pre-commit : 在commit前做的事情, 目前範例是先跑xampp的php 來檢查php語法的合法性
              不合法就先提示語法錯誤的檔案和行數並中斷commit的動作
              請自行修改本機電腦php安裝的路徑:  /c/xampp/php/php.exe
+
+請將pre-commit放在[專案資料夾] > [.git]資料夾 > [hooks]資料夾底下 再試
+
+
+samples資料夾裡面放git原生提供的範例檔案
